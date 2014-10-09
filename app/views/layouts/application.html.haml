@@ -5,9 +5,10 @@
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-
+  
   %body
     %h1.title Rotten Potatoes!
+    = button_to 'Sign up/Login', users_path
     #main
       - if flash[:notice]
         #notice.message= flash[:notice]
